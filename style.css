@@ -61,7 +61,6 @@ nav{
 
 .portfolio-row {
 	display: flex;
-	gap: 10px;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
@@ -87,4 +86,17 @@ nav{
 	font-size: 1.5rem;
 	color: var(--black);
 	text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1200px){
+	.container{
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.portfolio-row{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
 }
