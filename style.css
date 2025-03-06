@@ -1,151 +1,150 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Lato;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-:root{
-	--black: #111;
-	--blue: #007bff;
-}
 
-a{
-	text-decoration: none;	
-}
-
-li{
-	list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .container {
-	width: 1200px;
-	margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-nav{
-	display: flex;
-	justify-content: space-between;
+nav {
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .navbar {
-	display: flex;
-	gap: 10px;
-	padding: 20px 0;
+  display: flex;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+:root {
+  --black: #111;
+  --blue: #007bff;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
 }
 
 
-.navbar a{
-	color: var(--black);
-	padding: 8px;
-	border-bottom: 1px solid var(--black);
+.navbar a {
+  color: var(--black);
+  padding: 8px;
+  border-bottom: 1px solid var(--black);
 }
 
 .navbar a.active {
-	color: var(--blue);
-	border-bottom: 1px solid var(--blue);
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
 }
 
-.github-logo{
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 5px;
-	color: var(--black);
+.github {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--black);
 }
 
-/*	PORTFOLIO */
+/* PORTFOLIO */
 
 .portfolio-row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	margin-top: 50px;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
-.battle-col{
-	display: block;
-	width: 300px;
-	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+.battle-col {
+  display: block;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .battle-col img{
-	width: 100%;
-	object-fit: cover;
+  width: 100%;  
+  object-fit: cover;
 }
 
-.battle-col h2{
-	text-align: center;
-	margin: 10px 0;
-	font-size: 1.5rem;
-	color: var(--black);
-	text-transform: uppercase;
+.battle-col h2 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: var(--black);
+  text-transform:  uppercase;
 }
 
+header span {
+  font-size: 40px;
+}
 
 @media screen and (max-width: 1200px){
-	.container{
-		width: 100%;
-		padding: 0 20px;
-	}
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
 
-	.portfolio-row{
-		flex-wrap: wrap;
-		gap: 20px;
-	}
-
+  .portfolio-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
-@media screen and (max-width: 460px){
-	.navbar {
-		flex-direction:  column;
-		gap: 10px;
-	}
-	.navbar a{
-		border: 0!important;
-	}
-	.content{
-		width: 100%!important;
+@media screen and (max-width: 460px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-	}
+  .navbar a {
+    border: 0!important;
+  }
+  .content {
+    width: 100p%!important;
+  }
 }
 
-.content{
-	width: 400px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin: 0 auto;
+.content {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.avatar{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	object-fit: cover;
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.content h1{
-	margin: 20px 0;
-	font-size: 2rem;
-	color: var(--black);
+.content h1 {
+  margin: 20px 0;
+  font-size: 2rem;
+  color: var(--black);
 }
 
-.content p{
-	margin: 10px 0;
-	font-size: 1.2rem;
-	color: var(--black);
-	text-align: center;
-}
-
-{
-	border: 1px solid #111;
+.content p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: var(--black);
+  text-align: center;
 }
